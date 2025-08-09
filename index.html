@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Login - UMG</title>
+    <link rel="stylesheet" href="style1.css" id="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Sistema de Acceso UMG</h1>
+        <nav class="style-selector">
+            <label for="styleSelect">Seleccionar Estilo:</label>
+            <select id="styleSelect" onchange="changeStyle()">
+                <option value="style1.css">Estilo 1 - Azul Profesional</option>
+                <option value="style2.css">Estilo 2 - Verde Moderno</option>
+                <option value="none">Sin Estilos</option>
+            </select>
+        </nav>
+    </header>
+
+    <main>
+        <div class="login-container">
+            <div class="login-form">
+                <h2>Iniciar Sesión</h2>
+                <form id="loginForm">
+                    <div class="form-group">
+                        <label for="username">Usuario:</label>
+                        <input type="text" id="username" name="username" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="password">Contraseña:</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    
+                    <button type="submit" class="login-btn">Ingresar</button>
+                </form>
+                
+                <div id="message" class="message"></div>
+                
+                <div class="info">
+                    <p><strong>Credenciales de prueba:</strong></p>
+                    <p>Usuario: umg | Contraseña: 123456</p>
+                    <p>Usuario: admin | Contraseña: admin2024</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Universidad Mariano Gálvez - Sistema de Login</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
